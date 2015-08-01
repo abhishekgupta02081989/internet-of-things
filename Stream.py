@@ -83,5 +83,5 @@ while True:
   value = readadc(channel, SPICLK, SPIMOSI, SPIMISO, SPICS)
   print "value:", value
   print "Temperature = ", get_temp()
-  post_data("agupta12/skottur","77","42.36",get_temp(),value,"44240",True);
+  post_data("agupta12/skottur","41.15","-81.35",get_temp(),value,"44240",False);
   time.sleep(300.0)
