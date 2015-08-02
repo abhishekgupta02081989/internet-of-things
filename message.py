@@ -12,7 +12,7 @@ for i in range(0,100):
 	#print data
 	print data[i]['light']
 	print data[i]['user']
-	if(data[i]['user']=="agupta12/skottur" and data[i]['light'] <10):
+	if(data[i]['user']=="agupta12/skottur" and data[i]['temperature'] <10):
 		ACCOUNT_SID = "AC9fdb651e85c60e40622cc5a41eeb61ec" 
 		AUTH_TOKEN = "0d4cd7b95d6c688d5d02bbc665a654ad" 
  
@@ -21,5 +21,5 @@ for i in range(0,100):
 		client.messages.create(
 		to="3308120800", 
 		from_="+13305765860", 
-		body="Good Night Buddy !!!!",  
+		body="It's cold outside !!!!",  
 		)
